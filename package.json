@@ -28,7 +28,7 @@
     "nuxt-typed-router": "^3.2.3",
     "pinia": "^2.1.4",
     "sass": "^1.64.2",
-    "vue-lottie": "^0.2.1",
+    "vue3-lottie": "^3.0.0",
     "vuetify": "^3.3.8"
   }
 }

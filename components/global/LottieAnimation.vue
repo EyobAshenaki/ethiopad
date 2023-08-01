@@ -1,33 +1,33 @@
 <template>
-  <lottie :options="lottieOptions" @animCreated="handleAnimation" />
+  <client-only>
+    <Vue3Lottie :animation-data="lottieOptions" />
+  </client-only>
 </template>
 
 <script>
-import Lottie from 'vue-lottie/src/lottie.vue'
 export default {
   name: 'LottieAnimation',
-
-  components: {
-    Lottie,
-  },
 
   props: {
     item: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
 
   data() {
     return {
       anim: null, // for saving the reference to the animation
-      lottieOptions: { animationData: this.item.animationData.default },
-    }
+      lottieOptions: this.item.animationData
+    };
   },
   methods: {
     handleAnimation: function (anim) {
-      this.anim = anim
+      this.anim = anim;
     },
-  },
-}
+    test() {
+      console.log(this.item.animationData);
+    }
+  }
+};
 </script>
