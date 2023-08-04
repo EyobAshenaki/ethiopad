@@ -11,4 +11,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   });
 
   nuxtApp.vueApp.use(vuetify);
+
+  logServerInfo('Vuetify Online');
+  logServerError('Vuetify Offline');
 });
