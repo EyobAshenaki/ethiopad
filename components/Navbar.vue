@@ -38,12 +38,12 @@
           :icon="['fas', 'magnifying-glass']"
         /> -->
         <button
-          class="tw-flex tw-items-center tw-rounded-md tw-font-heading tw-font-bold tw-text-xl dark:tw-text-text-color dark:hover:tw-text-background dark:hover:tw-bg-primary tw-px-4 tw-py-2"
+          class="tw-flex tw-items-center tw-rounded-md tw-font-heading tw-font-bold tw-text-xl dark:tw-text-text-color dark:hover:tw-text-primary tw-px-4 tw-py-1.5"
         >
           <span>Log in</span>
         </button>
         <button
-          class="tw-flex tw-items-center tw-rounded-md tw-font-heading tw-font-bold tw-text-xl dark:tw-text-background dark:tw-bg-primary dark:hover:tw-text-primary dark:hover:tw-bg-transparent tw-px-4 tw-py-2"
+          class="tw-flex tw-items-center tw-rounded-md tw-font-heading tw-font-bold tw-text-xl dark:tw-text-background dark:tw-bg-primary dark:hover:tw-text-primary dark:hover:tw-bg-transparent tw-px-4 tw-py-1.5"
         >
           <span>Join</span>
         </button>
