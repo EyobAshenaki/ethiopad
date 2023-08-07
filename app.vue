@@ -16,6 +16,6 @@ html.tw-dark {
 }
 
 body {
-  @apply tw-bg-slate-50 tw-text-slate-800 dark:tw-bg-slate-800 dark:tw-text-slate-50;
+  @apply tw-bg-slate-50 tw-text-slate-800 dark:tw-bg-background dark:tw-text-text-color;
 }
 </style>

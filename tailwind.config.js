@@ -12,7 +12,19 @@ module.exports = {
     './app.vue'
   ],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        heading: ['Poiret One', 'sans-serif'],
+        body: ['Roboto', 'sans-serif']
+      },
+      colors: {
+        // primary: '#27fc78',
+        primary: '#00FEB0',
+        secondary: '#ff6700',
+        background: '#0F172A',
+        'text-color': '#F8FAFC'
+      }
+    }
   },
   plugins: []
 };

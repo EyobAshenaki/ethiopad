@@ -8,7 +8,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'EthioPad',
+      title: 'EthioPad - Literature done right',
       meta: [
         {
           name: 'description',
@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Poiret+One&display=swap'
+          href: 'https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto&display=swap'
         }
       ]
     }
