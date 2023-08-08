@@ -1,7 +1,7 @@
 <template>
   <nav class="tw-h-full tw-border-b-0 tw-border-primary tw-py-5 tw-mx-0">
     <div
-      class="tw-max-w-screen-xl tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-mx-auto p-4"
+      class="tw-max-w-screen-xl tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-mx-auto"
     >
       <nuxt-link
         href="/"
