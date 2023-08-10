@@ -4,7 +4,10 @@
 
 html {
   scroll-behavior: smooth;
-  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  @apply tw-box-border;
 }
 
 html.tw-dark {

@@ -6,7 +6,6 @@
     :to="to"
     :disabled="disabled"
     :loading="loading"
-    @click="$emit('click')"
   >
     <slot> Click Me </slot>
   </v-btn>
