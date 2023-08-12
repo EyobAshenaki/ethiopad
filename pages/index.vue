@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useDark, useToggle } from '@vueuse/core';
 import SectionDivider from '/components/layout/SectionDivider.vue';
-import TrendingArticles from '/components/home/TrendingArticles.vue';
+import TrendingArticlesRow from '/components/home/TrendingArticlesRow.vue';
 
 const isDark = useDark({
   valueDark: 'tw-dark',
@@ -43,10 +43,13 @@ const toggleDark = useToggle(isDark);
     </section>
 
     <!-- Below the fold -->
-    <section class="tw-max-w-screen-xl tw-flex tw-flex-col tw-mx-auto tw-my-24">
+    <div
+      class="tw-max-w-screen-xl tw-flex tw-flex-col tw-gap-20 tw-mx-auto tw-my-24"
+    >
       <!-- Trending section -->
-      <trending-articles />
-    </section>
+      <trending-articles-row />
+      <articles-row />
+    </div>
   </main>
 </template>
 
