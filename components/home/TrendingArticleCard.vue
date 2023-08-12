@@ -34,7 +34,7 @@ const { rank, title, author, date } = item;
 
 <style scoped>
 .trending-card {
-  @apply tw-relative tw-min-w-[19rem] tw-w-[19rem] tw-h-[19rem] tw-flex tw-flex-col tw-gap-7 tw-justify-center tw-text-center tw-rounded-lg tw-border-2 dark:tw-border-slate-600 tw-transition-all tw-duration-200 tw-p-2;
+  @apply tw-relative tw-min-w-[16rem] tw-w-[16rem] tw-h-[16rem] tw-flex tw-flex-col tw-gap-7 tw-justify-center tw-text-center tw-rounded-lg tw-border-2 dark:tw-border-slate-600 tw-transition-all tw-duration-200 tw-p-2;
 }
 
 .trending-card:hover {
@@ -74,7 +74,7 @@ const { rank, title, author, date } = item;
 }
 
 .active-trending-card {
-  @apply tw-w-80 tw-h-96 dark:tw-border-primary tw-gap-11 tw-p-3;
+  @apply tw-w-[17rem] tw-h-[21rem] dark:tw-border-primary tw-gap-11 tw-p-3;
 }
 
 .active-trending-card:hover {

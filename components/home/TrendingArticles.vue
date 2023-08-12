@@ -130,7 +130,7 @@ const prevNtBtnHandler = () => {
 
     <!-- Tiny cards -->
     <div
-      class="tw-h-[27rem] tw-w-[58rem] tw-flex tw-flex-col tw-justify-between -tw-mt-12 tw-overflow-x-hidden"
+      class="tw-h-[24.5rem] tw-w-[58rem] tw-flex tw-flex-col tw-justify-between -tw-mt-12 tw-overflow-x-hidden"
       data-carousel
     >
       <div class="tw-flex tw-space-x-5 tw-mt-12" data-slides>
@@ -148,22 +148,24 @@ const prevNtBtnHandler = () => {
         <button-light
           class="hover:tw-scale-125"
           :icon="true"
+          size="43"
           :disabled="disableLeftButton"
           @click="prevNtBtnHandler"
         >
           <font-awesome-icon
-            class="tw-w-4 tw-h-4"
+            class="tw-w-3.5 tw-h-3.tw-w-3.5"
             :icon="['fas', 'arrow-left']"
           />
         </button-light>
         <button-light
           class="hover:tw-scale-125"
           :icon="true"
+          size="43"
           :disabled="disableRightButton"
           @click="nextNtBtnHandler"
         >
           <font-awesome-icon
-            class="tw-w-4 tw-h-4"
+            class="tw-w-3.5 tw-h-3.tw-w-3.5"
             :icon="['fas', 'arrow-right']"
           />
         </button-light>
