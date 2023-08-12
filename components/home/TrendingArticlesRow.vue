@@ -143,6 +143,7 @@ const prevNtBtnHandler = () => {
             v-for="(item, idx) in items"
             :key="idx"
             :item="item"
+            :active="false"
             data-active
             class="tw-transition-transform tw-duration-700"
           />

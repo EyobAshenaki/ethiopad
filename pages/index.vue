@@ -48,6 +48,7 @@ const toggleDark = useToggle(isDark);
     >
       <!-- Trending section -->
       <trending-articles-row />
+      <!-- Articles section -->
       <articles-row />
     </div>
   </main>

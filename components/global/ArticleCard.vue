@@ -1,19 +1,19 @@
 <script setup lang="ts">
-type ItemProp = {
+type ArticleProp = {
   readTime: number;
   title: string;
   author: string;
-  catagory: string; // TODO: change to enum
+  category: string; // TODO: change to enum
   date: string;
   month: string;
 };
 
-const props = withDefaults(defineProps<{ item: ItemProp }>(), {
+const props = withDefaults(defineProps<{ item: ArticleProp }>(), {
   item: {
     readTime: 4,
     title: 'Racism in Ethiopia',
     author: 'Daneil Wondimu',
-    catagory: 'News',
+    category: 'News',
     date: '13',
     month: 'Jun 2023'
   }
@@ -46,7 +46,7 @@ const { item } = props;
       </div>
       <!-- <v-divider></v-divider> -->
       <p class="tw-font-body tw-text-sm tw-text-gray-200 tw-p-5">
-        {{ item.author }} . {{ item.readTime }} min read . {{ item.catagory }}
+        {{ item.author }} . {{ item.readTime }} min read . {{ item.category }}
       </p>
       <!-- <font-awesome-icon
                 class="tw-w-5 tw-h-5 dark:hover:tw-text-primary tw-ml-4"
@@ -56,7 +56,7 @@ const { item } = props;
     <button class="card-fab">
       <font-awesome-icon
         class="card-icon tw-w-7 tw-h-7"
-        :icon="['fas', 'arrow-right']"
+        :icon="['fas', 'arrow-right-long']"
       />
     </button>
   </div>
