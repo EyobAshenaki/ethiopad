@@ -1,55 +1,53 @@
 <template>
-  <nav class="tw-h-full tw-border-b-0 tw-border-primary tw-py-5 tw-mx-0">
-    <div
-      class="tw-max-w-screen-xl tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-mx-auto"
+  <header
+    class="tw-max-w-screen-xl tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-py-5 tw-mx-auto"
+  >
+    <nuxt-link
+      href="/"
+      class="tw-font-heading tw-font-bold tw-text-[2rem] dark:tw-text-primary"
     >
-      <nuxt-link
-        href="/"
-        class="tw-font-heading tw-font-bold tw-text-[2rem] dark:tw-text-primary"
+      EthioPad
+    </nuxt-link>
+    <nav
+      class="tw-items-center tw-justify-between tw-w-full md:tw-flex md:tw-w-auto tw-font-heading"
+    >
+      <ul
+        class="tw-flex tw-space-x-8 tw-font-bold tw-text-xl dark:tw-text-text-color"
       >
-        EthioPad
-      </nuxt-link>
-      <div
-        class="tw-items-center tw-justify-between tw-w-full md:tw-flex md:tw-w-auto tw-font-heading"
-      >
-        <ul
-          class="tw-flex tw-space-x-8 tw-font-bold tw-text-xl dark:tw-text-text-color"
-        >
-          <li class="nav-item">
-            <nuxt-link to="/articles"> Articles </nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link to="/fictions"> Fictions </nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link to="collaborations"> Collaborative </nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link to="/leaderboards"> Leaderboard </nuxt-link>
-          </li>
-        </ul>
-      </div>
-      <div
-        class="tw-w-full md:tw-flex md:tw-w-auto tw-items-center tw-space-x-4 tw-font-heading"
-      >
-        <!-- Todo: font code is buggy. Either fix it or change the icon mechanism -->
-        <!-- <font-awesome-icon
+        <li class="nav-item">
+          <nuxt-link to="/articles"> Articles </nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link to="/fictions"> Fictions </nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link to="collaborations"> Collaborative </nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link to="/leaderboards"> Leaderboard </nuxt-link>
+        </li>
+      </ul>
+    </nav>
+    <section
+      class="tw-w-full md:tw-flex md:tw-w-auto tw-items-center tw-space-x-4 tw-font-heading"
+    >
+      <!-- Todo: font code is buggy. Either fix it or change the icon mechanism -->
+      <!-- <font-awesome-icon
           class="tw-w-5 tw-h-5 tw-transition-all tw-duration-300 hover:tw-scale-110 dark:hover:tw-text-primary"
           :icon="['fas', 'magnifying-glass']"
         /> -->
-        <button
-          class="tw-flex tw-items-center tw-rounded-md tw-font-heading tw-font-bold tw-text-xl dark:tw-text-text-color dark:hover:tw-text-primary tw-px-4 tw-py-1.5"
-        >
-          <span>Log in</span>
-        </button>
-        <button
-          class="tw-flex tw-items-center tw-rounded-md tw-font-heading tw-font-bold tw-text-xl dark:tw-text-background dark:tw-bg-primary dark:hover:tw-text-primary dark:hover:tw-bg-transparent tw-px-4 tw-py-1.5"
-        >
-          <span>Join</span>
-        </button>
-      </div>
-    </div>
-  </nav>
+      <button
+        class="tw-flex tw-items-center tw-rounded-md tw-font-heading tw-font-bold tw-text-xl dark:tw-text-text-color dark:hover:tw-text-primary tw-px-4 tw-py-1.5"
+      >
+        <span>Log in</span>
+      </button>
+      <button
+        class="tw-flex tw-items-center tw-rounded-md tw-font-heading tw-font-bold tw-text-xl dark:tw-text-background dark:tw-bg-primary dark:hover:tw-text-primary dark:hover:tw-bg-transparent tw-px-4 tw-py-1.5"
+      >
+        <span>Join</span>
+      </button>
+    </section>
+  </header>
 </template>
 
 <script setup lang="ts"></script>

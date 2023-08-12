@@ -124,54 +124,59 @@ const prevNtBtnHandler = () => {
 </script>
 
 <template>
-  <div class="tw-max-w-screen-xl tw-flex tw-space-x-5 tw-font-body">
-    <!-- Main card -->
-    <trending-article-card :active="true" :item="items[0]" />
+  <section class="tw-flex tw-flex-col tw-space-y-24">
+    <h2 class="tw-font-heading tw-font-semibold tw-text-3xl">
+      Trending Articles
+    </h2>
+    <div class="tw-max-w-screen-xl tw-flex tw-gap-5 tw-font-body">
+      <!-- Main card -->
+      <trending-article-card :active="true" :item="items[0]" />
 
-    <!-- Tiny cards -->
-    <div
-      class="tw-h-[24.5rem] tw-w-[58rem] tw-flex tw-flex-col tw-justify-between -tw-mt-12 tw-overflow-x-hidden"
-      data-carousel
-    >
-      <div class="tw-flex tw-space-x-5 tw-mt-12" data-slides>
-        <!-- Card -->
-        <trending-article-card
-          v-for="(item, idx) in items"
-          :key="idx"
-          :item="item"
-          data-active
-          class="tw-transition-transform tw-duration-700"
-        />
-      </div>
-      <!-- Buttons -->
-      <div ref="carouselButtons" class="tw-flex tw-gap-4 tw-pl-2 tw-pb-2">
-        <button-light
-          class="hover:tw-scale-125"
-          :icon="true"
-          size="43"
-          :disabled="disableLeftButton"
-          @click="prevNtBtnHandler"
-        >
-          <font-awesome-icon
-            class="tw-w-3.5 tw-h-3.tw-w-3.5"
-            :icon="['fas', 'arrow-left']"
+      <!-- Tiny cards carousel -->
+      <section
+        class="tw-h-[24.5rem] tw-w-[58rem] tw-flex tw-flex-col tw-justify-between -tw-mt-12 tw-overflow-x-hidden"
+        data-carousel
+      >
+        <div class="tw-flex tw-space-x-5 tw-mt-12" data-slides>
+          <!-- Card -->
+          <trending-article-card
+            v-for="(item, idx) in items"
+            :key="idx"
+            :item="item"
+            data-active
+            class="tw-transition-transform tw-duration-700"
           />
-        </button-light>
-        <button-light
-          class="hover:tw-scale-125"
-          :icon="true"
-          size="43"
-          :disabled="disableRightButton"
-          @click="nextNtBtnHandler"
-        >
-          <font-awesome-icon
-            class="tw-w-3.5 tw-h-3.tw-w-3.5"
-            :icon="['fas', 'arrow-right']"
-          />
-        </button-light>
-      </div>
+        </div>
+        <!-- Buttons -->
+        <div ref="carouselButtons" class="tw-flex tw-gap-4 tw-pl-2 tw-pb-2">
+          <button-light
+            class="hover:tw-scale-125"
+            :icon="true"
+            size="43"
+            :disabled="disableLeftButton"
+            @click="prevNtBtnHandler"
+          >
+            <font-awesome-icon
+              class="tw-w-3.5 tw-h-3.tw-w-3.5"
+              :icon="['fas', 'arrow-left']"
+            />
+          </button-light>
+          <button-light
+            class="hover:tw-scale-125"
+            :icon="true"
+            size="43"
+            :disabled="disableRightButton"
+            @click="nextNtBtnHandler"
+          >
+            <font-awesome-icon
+              class="tw-w-3.5 tw-h-3.tw-w-3.5"
+              :icon="['fas', 'arrow-right']"
+            />
+          </button-light>
+        </div>
+      </section>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped></style>

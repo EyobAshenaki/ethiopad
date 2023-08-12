@@ -4,10 +4,9 @@ import FooterSection from '@/components/layout/FooterSection.vue';
 </script>
 
 <template>
-  <div>
-    <navbar />
-    <slot />
+  <navbar />
 
-    <footer-section />
-  </div>
+  <slot />
+
+  <footer-section />
 </template>
