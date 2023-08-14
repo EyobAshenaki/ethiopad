@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { useDark, useToggle } from '@vueuse/core';
-import SectionDivider from '/components/layout/SectionDivider.vue';
+import HeroSectionDivider from '/components/layout/HeroSectionDivider.vue';
 import TrendingArticlesRow from '/components/home/TrendingArticlesRow.vue';
+import TopicsCarouselRow from '/components/home/TopicsCarouselRow.client.vue';
+import SectionDivider from '/components/layout/SectionDivider.vue';
 
 const isDark = useDark({
   valueDark: 'tw-dark',
@@ -39,17 +41,23 @@ const toggleDark = useToggle(isDark);
         </v-btn>
       </div>
 
-      <section-divider class="dark:tw-fill-background" />
+      <hero-section-divider class="dark:tw-fill-background" />
     </section>
 
     <!-- Below the fold -->
-    <div
-      class="tw-max-w-screen-xl tw-flex tw-flex-col tw-gap-20 tw-mx-auto tw-my-24"
-    >
+    <div class="tw-flex tw-flex-col tw-items-center tw-gap-20 tw-my-24">
       <!-- Trending section -->
       <trending-articles-row />
-      <!-- Articles section -->
-      <articles-row />
+
+      <div
+        class="tw-w-full tw-relative tw-flex tw-flex-col tw-bg-gradient-to-b tw-from-background tw-to-slate-800"
+      >
+        <topics-carousel-row />
+
+        <articles-row />
+
+        <section-divider class="tw-w-full dark:tw-fill-background" />
+      </div>
     </div>
   </main>
 </template>
