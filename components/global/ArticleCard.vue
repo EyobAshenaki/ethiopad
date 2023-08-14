@@ -19,7 +19,7 @@ const props = withDefaults(defineProps<{ item: ArticleProp }>(), {
   }
 });
 
-const { item } = props;
+const { title, date, month, author, readTime, category } = props.item;
 </script>
 
 <template>
@@ -33,20 +33,20 @@ const { item } = props;
         <h3
           class="tw-basis-2/3 tw-font-body tw-font-medium dark:tw-text-text-color tw-text-xl"
         >
-          {{ item.title }}
+          {{ title }}
         </h3>
         <div class="tw-basis-1/4 tw-flex tw-flex-col">
           <span
             class="tw-font-body tw-font-bold tw-text-slate-400 tw-text-3xl tw-text-center"
           >
-            {{ item.date }}
+            {{ date }}
           </span>
-          <span class="tw-font-body tw-text-center"> {{ item.month }} </span>
+          <span class="tw-font-body tw-text-center"> {{ month }} </span>
         </div>
       </div>
       <!-- <v-divider></v-divider> -->
       <p class="tw-font-body tw-text-sm tw-text-gray-200 tw-p-5">
-        {{ item.author }} . {{ item.readTime }} min read . {{ item.category }}
+        {{ author }} . {{ readTime }} min read . {{ category }}
       </p>
       <!-- <font-awesome-icon
                 class="tw-w-5 tw-h-5 dark:hover:tw-text-primary tw-ml-4"
@@ -68,11 +68,30 @@ const { item } = props;
 }
 
 .card-container:hover {
-  @apply tw-border-b-4 dark:tw-border-b-primary;
+  @apply tw-border-transparent;
+}
+
+.card-container::after {
+  content: '';
+  /* background: linear-gradient(transparent, #00feb0, transparent); */
+  background: linear-gradient(to right, transparent, #00feb0, transparent);
+  height: 2px;
+  width: 5rem;
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.card-container:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 
 .card-container:hover .card-img {
-  @apply tw-h-full;
+  @apply tw-h-full tw-rounded-b-lg;
 }
 
 .card-container:hover .card-content {

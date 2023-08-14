@@ -4,7 +4,7 @@ const articles = [
     readTime: 7,
     title: 'The Ethiopian Renaissance Dam',
     author: 'Eyob Aschenaki',
-    catagory: 'Facts',
+    category: 'Facts',
     date: '09',
     month: 'Aug 2023'
   },
@@ -12,7 +12,7 @@ const articles = [
     readTime: 10,
     title: 'Ethiopian Politics',
     author: 'Ibrahim Mohammed',
-    catagory: 'Politics',
+    category: 'Politics',
     date: '05',
     month: 'May 2023'
   },
@@ -20,7 +20,7 @@ const articles = [
     readTime: 16,
     title: 'Best Ethiopian Food',
     author: 'Adem Mohammed',
-    catagory: 'Food',
+    category: 'Food',
     date: '17',
     month: 'May 2023'
   }
@@ -28,7 +28,9 @@ const articles = [
 </script>
 
 <template>
-  <section class="tw-flex tw-flex-col tw-gap-12">
+  <section
+    class="tw-max-w-screen-xl tw-flex tw-flex-col tw-self-center tw-gap-12 tw-pt-20 -tw-mb-16"
+  >
     <h2 class="tw-font-heading tw-font-semibold tw-text-3xl">
       Recent Articles
     </h2>

@@ -124,7 +124,7 @@ const prevNtBtnHandler = () => {
 </script>
 
 <template>
-  <section class="tw-flex tw-flex-col tw-space-y-24">
+  <section class="tw-max-w-screen-xl tw-flex tw-flex-col tw-space-y-24">
     <h2 class="tw-font-heading tw-font-semibold tw-text-3xl">
       Trending Articles
     </h2>
@@ -158,7 +158,7 @@ const prevNtBtnHandler = () => {
             @click="prevNtBtnHandler"
           >
             <font-awesome-icon
-              class="tw-w-3.5 tw-h-3.tw-w-3.5"
+              class="tw-w-3.5 tw-h-3"
               :icon="['fas', 'arrow-left']"
             />
           </button-light>
@@ -170,7 +170,7 @@ const prevNtBtnHandler = () => {
             @click="nextNtBtnHandler"
           >
             <font-awesome-icon
-              class="tw-w-3.5 tw-h-3.tw-w-3.5"
+              class="tw-w-3.5 tw-h-3"
               :icon="['fas', 'arrow-right']"
             />
           </button-light>
