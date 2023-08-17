@@ -45,8 +45,8 @@ const toggleDark = useToggle(isDark);
     </section>
 
     <!-- Below the fold -->
-    <section class="tw-flex tw-flex-col tw-items-center tw-gap-20 tw-my-24">
-      <!-- Trending section -->
+    <!-- Article section -->
+    <section class="tw-flex tw-flex-col tw-items-center tw-gap-20 tw-mt-28">
       <trending-articles-row />
 
       <div
@@ -58,6 +58,11 @@ const toggleDark = useToggle(isDark);
 
         <section-divider class="tw-w-full dark:tw-fill-background" />
       </div>
+    </section>
+
+    <!-- Fiction section -->
+    <section class="tw-flex tw-flex-col tw-items-center tw-gap-20 tw-mt-12 tw-mb-16">
+      <laying-book-3d-cards-row />
     </section>
   </main>
 </template>
