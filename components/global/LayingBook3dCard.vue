@@ -63,11 +63,11 @@ const props = withDefaults(defineProps<{ item: FictionProp; idx: number }>(), {
   @apply tw-w-full tw-h-full tw-relative;
   transform-style: preserve-3d;
   transition: 0.8s ease-in-out;
-  transform: rotateY(8deg) rotateX(60deg) rotateZ(-25deg);
+  transform: rotateY(15deg) rotateX(60deg) rotateZ(-25deg);
 }
 
 .b-container .book:hover {
-  transform: rotateY(40deg) rotateX(0deg) rotateZ(0deg);
+  transform: rotateY(45deg) rotateX(0deg) rotateZ(0deg);
 }
 
 .b-container .book:active {
@@ -76,7 +76,7 @@ const props = withDefaults(defineProps<{ item: FictionProp; idx: number }>(), {
 
 .b-container .book::before {
   content: 'The Fate of Fausto';
-  @apply tw-absolute tw-w-12 tw-h-full tw-flex tw-justify-center tw-items-center tw-font-mono tw-origin-left tw-bg-secondary tw-text-2xl;
+  @apply tw-absolute tw-w-12 tw-h-full tw-flex tw-justify-start tw-items-center tw-font-mono tw-origin-left tw-bg-secondary tw-text-[20px] tw-leading-6 tw-p-4;
   writing-mode: tb-rl;
   transform: rotateY(90deg) rotateX(180deg) rotateZ(180deg);
 }

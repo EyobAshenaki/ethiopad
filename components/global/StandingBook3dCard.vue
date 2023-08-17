@@ -76,7 +76,7 @@ const props = withDefaults(defineProps<{ item: FictionProp; idx: number }>(), {
 
 .b-container .book::before {
   content: 'The Fate of Fausto';
-  @apply tw-absolute tw-w-12 tw-h-full tw-flex tw-justify-center tw-items-center tw-font-mono tw-origin-left tw-bg-secondary tw-text-2xl;
+  @apply tw-absolute tw-w-12 tw-h-full tw-flex tw-justify-start tw-items-center tw-font-mono tw-origin-left tw-bg-secondary tw-text-[20px] tw-leading-6 tw-p-4;
   writing-mode: tb-rl;
   transform: rotateY(90deg) rotateX(180deg) rotateZ(180deg);
 }
