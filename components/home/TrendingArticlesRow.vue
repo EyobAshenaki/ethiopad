@@ -124,7 +124,7 @@ const prevNtBtnHandler = () => {
 </script>
 
 <template>
-  <section class="tw-max-w-screen-xl tw-flex tw-flex-col tw-space-y-24">
+  <section class="tw-max-w-screen-xl tw-flex tw-flex-col tw-space-y-32">
     <h2 class="tw-font-heading tw-font-semibold tw-text-3xl">
       Trending Articles
     </h2>

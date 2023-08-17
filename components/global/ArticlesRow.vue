@@ -29,7 +29,7 @@ const articles = [
 
 <template>
   <section
-    class="tw-max-w-screen-xl tw-flex tw-flex-col tw-self-center tw-gap-12 tw-pt-20 -tw-mb-16"
+    class="tw-max-w-screen-xl tw-flex tw-flex-col tw-self-center tw-gap-20 tw-pt-20 -tw-mb-10"
   >
     <h2 class="tw-font-heading tw-font-semibold tw-text-3xl">
       Recent Articles

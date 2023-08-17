@@ -32,14 +32,6 @@ const fictions = [
     date: '05',
     month: 'May 2023'
   }
-  // {
-  //   readTime: 16,
-  //   title: 'Best Ethiopian Food',
-  //   author: 'Adem Mohammed',
-  //   category: 'Food',
-  //   date: '17',
-  //   month: 'May 2023'
-  // }
 ];
 </script>
 
@@ -51,7 +43,7 @@ const fictions = [
       Recent Fictions
     </h2>
     <div class="tw-flex tw-flex-wrap -tw-space-x-10">
-      <standing-book-card-3d
+      <standing-book-3d-card
         v-for="(fiction, idx) in fictions"
         :key="idx"
         :item="fiction"

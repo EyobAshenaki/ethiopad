@@ -95,7 +95,7 @@ const moveClipPath = (e) => {
 
 <template>
   <section
-    class="tw-max-w-screen-xl tw-flex tw-flex-col tw-self-center tw-items-center tw-gap-12"
+    class="tw-max-w-screen-xl tw-flex tw-flex-col tw-self-center tw-items-center tw-gap-12 tw-my-20"
   >
     <h2 class="tw-font-heading tw-font-semibold tw-text-3xl tw-text-text-color">
       Topics
