@@ -95,7 +95,7 @@ const moveClipPath = (e) => {
 
 <template>
   <section
-    class="tw-max-w-screen-xl tw-flex tw-flex-col tw-self-center tw-items-center tw-gap-12 tw-my-20"
+    class="tw-flex tw-flex-col tw-self-center tw-items-center tw-gap-12 tw-bg-secondary/60 tw-py-14"
   >
     <h2 class="tw-font-heading tw-font-semibold tw-text-3xl tw-text-text-color">
       Topics
@@ -118,6 +118,7 @@ const moveClipPath = (e) => {
           <font-awesome-icon class="topic-carousel-icon" :icon="icon" />
           <span class="topic-carousel-name"> {{ title }} </span>
           <div
+            v-if="idx !== items.length - 1"
             class="tw-w-[1px] tw-h-1/3 tw-absolute tw-top-1/2 tw-right-0 -tw-translate-y-1/2 tw-border tw-border-accent"
           ></div>
         </div>
@@ -136,7 +137,7 @@ const moveClipPath = (e) => {
   @apply tw-min-w-[var(--item-width)] tw-h-full tw-relative;
   animation-name: move;
   animation-timing-function: linear;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
@@ -157,10 +158,10 @@ const moveClipPath = (e) => {
 
 @keyframes move {
   0% {
-    transform: translateX(0);
+    transform: translateX(calc(var(--item-width) - 6rem));
   }
   100% {
-    transform: translateX(calc((var(--item-width) * -8) / 3));
+    transform: translateX(calc((var(--item-width) * -8) / 15));
   }
 }
 
