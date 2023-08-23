@@ -24,16 +24,22 @@ const articles = [
     date: '17',
     month: 'May 2023'
   }
-]
+];
 </script>
 
 <template>
-  <section class="tw-max-w-screen-xl tw-flex tw-flex-col tw-self-center tw-gap-20 -tw-mb-40">
+  <section
+    class="tw-max-w-screen-xl tw-flex tw-flex-col tw-self-center tw-gap-20"
+  >
     <h2 class="tw-font-heading tw-font-semibold tw-text-3xl">
       Recent Articles
     </h2>
     <div class="tw-flex tw-gap-16">
-      <article-card v-for="(article, idx) in articles" :key="idx" :item="article" />
+      <article-card
+        v-for="(article, idx) in articles"
+        :key="idx"
+        :item="article"
+      />
     </div>
   </section>
 </template>
