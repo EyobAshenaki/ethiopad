@@ -74,7 +74,7 @@ const { rank, title, author, date } = item;
 }
 
 .active-trending-card {
-  @apply tw-w-[17rem] tw-h-[21rem] dark:tw-border-primary tw-gap-11 tw-p-3;
+  @apply tw-w-[21rem] tw-h-[21rem] dark:tw-border-primary tw-gap-11 tw-p-3;
 }
 
 .active-trending-card:hover {
