@@ -78,7 +78,7 @@ const articles = [
     <!-- Hero section -->
     <section class="tw-w-full tw-flex tw-flex-col tw-items-center">
       <div
-        class="tw-max-w-screen-2xl tw-h-[35rem] tw-flex tw-items-center tw-gap-48"
+        class="tw-max-w-screen-2xl tw-h-[35rem] tw-flex tw-items-center tw-gap-20"
       >
         <div
           class="tw-w-[80%] tw-flex tw-flex-col tw-justify-center tw-items-start"
@@ -110,8 +110,11 @@ const articles = [
           <div class="triangle-lg"></div>
           <div class="triangle-sm"></div>
           <div class="blur-shadow -tw-mt-2"></div>
+          <div class="img-border-1"></div>
+          <div class="img-border-2"></div>
+          <div class="img-border-3"></div>
           <img
-            class="tw-w-[22rem] tw-h-[22rem] tw-object-cover tw-rounded-sm tw-z-20"
+            class="hero-img"
             src="https://cdn.discordapp.com/attachments/1063523239718035607/1144635166682251314/b89815bb-bf85-4b49-ad9d-c323e6e10033.jpg"
             alt=""
           />
@@ -141,7 +144,7 @@ const articles = [
           />
         </div>
 
-        <load-more-btn />
+        <load-more-btn class="tw-mt-5" />
       </section>
 
       <author-cards-row />
@@ -150,6 +153,9 @@ const articles = [
 </template>
 
 <style scoped>
+.hero-img {
+  @apply tw-w-[22rem] tw-h-[22rem] tw-object-cover tw-rounded-sm tw-z-20;
+}
 .hero-btn-secondary {
   @apply tw-w-fit tw-flex tw-items-center tw-rounded-lg tw-font-heading tw-capitalize tw-font-bold tw-text-2xl dark:tw-text-primary dark:tw-bg-transparent tw-border-2 tw-border-primary tw-transition-all tw-duration-300 tw-py-6 tw-px-5;
 }
@@ -175,15 +181,33 @@ const articles = [
 }
 
 .triangle-lg {
-  @apply tw-w-0 tw-h-0 tw-absolute -tw-top-20 -tw-left-24 tw-border-solid tw-rotate-[155deg] tw-border-t-[350px] tw-border-r-[350px] tw-border-l-[250px] tw-border-transparent dark:tw-border-t-accent-secondary/90 tw-z-10;
+  @apply tw-w-0 tw-h-0 tw-absolute -tw-top-20 -tw-left-24 tw-border-solid tw-rotate-[165deg] tw-border-t-[350px] tw-border-r-[350px] tw-border-l-[250px] tw-border-transparent dark:tw-border-t-accent-secondary/80 tw-z-10;
 }
 
 .triangle-sm {
-  @apply tw-w-0 tw-h-0 tw-absolute -tw-bottom-8 tw-right-3 tw-border-solid -tw-rotate-[10deg] tw-border-b-[110px] tw-border-l-[220px] tw-border-transparent dark:tw-border-b-primary/90 tw-z-10;
+  @apply tw-w-0 tw-h-0 tw-absolute -tw-bottom-10 tw-right-8 tw-border-solid -tw-rotate-[10deg] tw-border-b-[110px] tw-border-l-[220px] tw-border-transparent dark:tw-border-b-primary/70 tw-z-10;
 }
 
 .blur-shadow {
-  @apply tw-w-80 tw-h-80 tw-absolute tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-blur-[6rem] tw-rounded-full dark:tw-bg-primary;
+  @apply tw-w-80 tw-h-80 tw-absolute tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-blur-[8rem] tw-rounded-full dark:tw-bg-primary;
+}
+
+.img-border-1 {
+  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid tw-border-primary/80 tw-z-20;
+  transform-style: preserve-3d;
+  transform: rotateY(15deg) rotateZ(-4deg);
+}
+
+.img-border-2 {
+  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid tw-border-primary/80 tw-z-20;
+  transform-style: preserve-3d;
+  transform: rotateY(15deg) rotateZ(-8deg);
+}
+
+.img-border-3 {
+  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid tw-border-primary/80 tw-z-20;
+  transform-style: preserve-3d;
+  transform: rotateY(15deg) rotateZ(-12deg);
 }
 
 .articles-container {
