@@ -1,7 +1,76 @@
 <script setup lang="ts">
+import TrendingArticlesRow from '/components/home/TrendingArticlesRow.vue';
+
 definePageMeta({
   layout: 'default'
 });
+
+const articles = [
+  {
+    readTime: 7,
+    title: 'The Ethiopian Renaissance Dam',
+    author: 'Eyob Aschenaki',
+    category: 'Facts',
+    date: '09',
+    month: 'Aug 2023'
+  },
+  {
+    readTime: 10,
+    title: 'Ethiopian Politics',
+    author: 'Ibrahim Mohammed',
+    category: 'Politics',
+    date: '05',
+    month: 'May 2023'
+  },
+  {
+    readTime: 16,
+    title: 'Best Ethiopian Food',
+    author: 'Adem Mohammed',
+    category: 'Food',
+    date: '17',
+    month: 'May 2023'
+  },
+  {
+    readTime: 3,
+    title: 'Ethiopian History',
+    author: 'Daneil Wondimu',
+    category: 'History',
+    date: '13',
+    month: 'Jun 2023'
+  },
+  {
+    readTime: 5,
+    title: 'Rise of Ethiopian Music',
+    author: 'Fikirte Assefa',
+    category: 'Music',
+    date: '11',
+    month: 'Dec 2023'
+  },
+  {
+    readTime: 8,
+    title: 'Ethiopian Culture',
+    author: 'Abebech Alemu',
+    category: 'Culture',
+    date: '19',
+    month: 'Jan 2023'
+  },
+  {
+    readTime: 12,
+    title: 'Ethiopian Literature',
+    author: 'Hirut Tadesse',
+    category: 'Literature',
+    date: '21',
+    month: 'Mar 2023'
+  },
+  {
+    readTime: 9,
+    title: 'Ethiopian Art',
+    author: 'Tewodros Alemu',
+    category: 'Art',
+    date: '01',
+    month: 'Feb 2023'
+  }
+];
 </script>
 
 <template>
@@ -49,6 +118,30 @@ definePageMeta({
         </div>
       </div>
     </section>
+
+    <!-- Below the fold -->
+    <section class="articles-container">
+      <trending-articles-row />
+
+      <articles-row class="tw-pt-20" />
+
+      <!-- Todo -->
+      <!-- Add a articles cards divided into their catagories and topic names displayed on left side vertically with a short line to their left -->
+      <div class="tw-max-w-screen-2xl tw-flex tw-flex-col">
+        <topic-chips-row class="tw-max-w-screen-2xl tw-mb-8" />
+        <h3 class="topic-sub-heading">Topic</h3>
+        <h2 class="topic-heading">Sport</h2>
+        <div class="tw-flex tw-flex-wrap tw-gap-12 tw-mb-10">
+          <article-card
+            v-for="(article, idx) in articles"
+            :key="idx"
+            :item="article"
+          />
+        </div>
+        <load-more-btn />
+      </div>
+      <!-- Maybe add a recommended section based on the read's previous reads and interests -->
+    </section>
   </main>
 </template>
 
@@ -87,5 +180,19 @@ definePageMeta({
 
 .blur-shadow {
   @apply tw-w-80 tw-h-80 tw-absolute tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-blur-[6rem] tw-rounded-full dark:tw-bg-primary;
+}
+
+.articles-container {
+  @apply tw-flex tw-flex-col tw-items-center tw-gap-20 tw-bg-gradient-to-b dark:tw-from-background dark:tw-via-background dark:tw-to-slate-800 tw-pt-36 tw-pb-48;
+}
+
+.topic-sub-heading {
+  @apply tw-font-heading tw-font-bold tw-capitalize tw-text-xl tw-text-slate-300 tw-mb-4;
+  letter-spacing: 2px;
+}
+
+.topic-heading {
+  @apply tw-font-heading tw-font-bold tw-capitalize tw-text-5xl tw-text-text-color tw-mb-12;
+  letter-spacing: 2px;
 }
 </style>

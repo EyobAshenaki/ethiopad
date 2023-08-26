@@ -18,10 +18,10 @@ const { name, icon } = topic;
 
 <template>
   <div
-    class="tw-w-fit tw-flex tw-justify-around tw-items-center tw-gap-2 dark:tw-text-primary tw-rounded-full tw-border-2 dark:tw-border-primary hover:dark:tw-bg-secondary hover:dark:tw-text-text-color active:dark:tw-bg-primary active:dark:tw-border-transparent active:dark:tw-text-secondary tw-px-2.5 tw-py-1"
+    class="tw-w-fit tw-flex tw-justify-around tw-items-center tw-gap-2 dark:tw-text-primary tw-rounded-full tw-border-2 dark:tw-border-primary hover:dark:tw-bg-secondary active:dark:tw-bg-primary active:dark:tw-border-transparent active:dark:tw-text-background tw-px-4 tw-py-1.5"
   >
     <font-awesome-icon class="tw-w-4 tw-h-4" :icon="icon"> </font-awesome-icon>
-    <span class="tw-font-body">{{ name }}</span>
+    <span class="tw-font-body tw-text-lg">{{ name }}</span>
   </div>
 </template>
 
