@@ -50,6 +50,8 @@ const fictions = [
         :idx="idx"
       />
     </div>
+
+    <load-more-btn />
   </section>
 </template>
 

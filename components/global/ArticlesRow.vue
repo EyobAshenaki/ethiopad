@@ -49,6 +49,7 @@ const articles = [
         :item="article"
       />
     </div>
+    <load-more-btn class="-tw-mt-5" />
   </section>
 </template>
 
