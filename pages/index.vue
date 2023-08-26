@@ -4,7 +4,6 @@ import HeroSectionDivider from '/components/layout/HeroSectionDivider.vue';
 import TrendingArticlesRow from '/components/home/TrendingArticlesRow.vue';
 import TopicsCarouselRow from '/components/home/TopicsCarouselRow.client.vue';
 import SectionDivider from '/components/layout/SectionDivider.vue';
-import FooterSectionDivider from '/components/layout/FooterSectionDivider.vue';
 
 const isDark = useDark({
   valueDark: 'tw-dark',
