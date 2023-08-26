@@ -6,6 +6,7 @@ type ArticleProp = {
   category: string; // TODO: change to enum
   date: string;
   month: string;
+  image: string;
 };
 
 const props = withDefaults(defineProps<{ item: ArticleProp }>(), {
@@ -15,19 +16,17 @@ const props = withDefaults(defineProps<{ item: ArticleProp }>(), {
     author: 'Daneil Wondimu',
     category: 'News',
     date: '13',
-    month: 'Jun 2023'
+    month: 'Jun 2023',
+    image: 'https://cdn.vuetifyjs.com/images/cards/sunshine.jpg'
   }
 });
 
-const { title, date, month, author, readTime, category } = props.item;
+const { title, date, month, author, readTime, category, image } = props.item;
 </script>
 
 <template>
   <div class="card-container">
-    <img
-      src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-      class="card-img"
-    />
+    <img :src="image" class="card-img" />
     <div class="card-content tw-rounded-b-lg">
       <div class="tw-flex tw-justify-between tw-items-center tw-py-3 tw-px-5">
         <h3

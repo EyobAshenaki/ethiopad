@@ -1,5 +1,15 @@
 <script setup lang="ts">
 import TrendingArticlesRow from '/components/home/TrendingArticlesRow.vue';
+import officeHours from 'assets/images/office_hours.jpg';
+import moneyTalk from 'assets/images/money_talk.jpg';
+import management from 'assets/images/management.jpg';
+import history from 'assets/images/history.jpg';
+import productivity from 'assets/images/productivity.jpg';
+import technology from 'assets/images/technology.jpg';
+import ethioianArt from 'assets/images/ethiopian_art.jpg';
+import literature from 'assets/images/literature.jpg';
+
+import { useImage } from '@vueuse/core';
 
 definePageMeta({
   layout: 'default'
@@ -12,7 +22,9 @@ const articles = [
     author: 'Eyob Aschenaki',
     category: 'Facts',
     date: '09',
-    month: 'Aug 2023'
+    month: 'Aug 2023',
+    image: officeHours,
+    imgObj: useImage({ src: officeHours })
   },
   {
     readTime: 10,
@@ -20,7 +32,9 @@ const articles = [
     author: 'Ibrahim Mohammed',
     category: 'Politics',
     date: '05',
-    month: 'May 2023'
+    month: 'May 2023',
+    image: moneyTalk,
+    imgObj: useImage({ src: moneyTalk })
   },
   {
     readTime: 16,
@@ -28,7 +42,9 @@ const articles = [
     author: 'Adem Mohammed',
     category: 'Food',
     date: '17',
-    month: 'May 2023'
+    month: 'May 2023',
+    image: management,
+    imgObj: useImage({ src: management })
   },
   {
     readTime: 3,
@@ -36,7 +52,9 @@ const articles = [
     author: 'Daneil Wondimu',
     category: 'History',
     date: '13',
-    month: 'Jun 2023'
+    month: 'Jun 2023',
+    image: history,
+    imgObj: useImage({ src: history })
   },
   {
     readTime: 5,
@@ -44,7 +62,9 @@ const articles = [
     author: 'Fikirte Assefa',
     category: 'Music',
     date: '11',
-    month: 'Dec 2023'
+    month: 'Dec 2023',
+    image: productivity,
+    imgObj: useImage({ src: productivity })
   },
   {
     readTime: 8,
@@ -52,7 +72,9 @@ const articles = [
     author: 'Abebech Alemu',
     category: 'Culture',
     date: '19',
-    month: 'Jan 2023'
+    month: 'Jan 2023',
+    image: technology,
+    imgObj: useImage({ src: technology })
   },
   {
     readTime: 12,
@@ -60,7 +82,9 @@ const articles = [
     author: 'Hirut Tadesse',
     category: 'Literature',
     date: '21',
-    month: 'Mar 2023'
+    month: 'Mar 2023',
+    image: literature,
+    imgObj: useImage({ src: literature })
   },
   {
     readTime: 9,
@@ -68,7 +92,9 @@ const articles = [
     author: 'Tewodros Alemu',
     category: 'Art',
     date: '01',
-    month: 'Feb 2023'
+    month: 'Feb 2023',
+    image: ethioianArt,
+    imgObj: useImage({ src: ethioianArt })
   }
 ];
 </script>
