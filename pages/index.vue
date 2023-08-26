@@ -30,14 +30,9 @@ const toggleDark = useToggle(isDark);
           Craft compelling stories and share your unique voice with the world.
         </p>
 
-        <v-btn
-          class="tw-w-fit tw-flex tw-items-center tw-rounded-full tw-font-heading tw-capitalize tw-font-bold tw-text-2xl dark:tw-text-background dark:tw-bg-primary dark:hover:tw-text-primary dark:hover:tw-bg-transparent tw-border-2 tw-border-transparent tw-transition-all tw-duration-300 dark:hover:tw-border-primary tw-py-7 tw-px-6"
-        >
+        <v-btn class="hero-btn">
           <span>Explore</span>
-          <font-awesome-icon
-            class="tw-w-5 tw-h-5 dark:hover:tw-text-primary tw-ml-4"
-            :icon="['fas', 'arrow-right-long']"
-          />
+          <font-awesome-icon class="icon" :icon="['fas', 'arrow-right-long']" />
         </v-btn>
       </div>
 
@@ -71,4 +66,20 @@ const toggleDark = useToggle(isDark);
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+.hero-btn {
+  @apply tw-w-fit tw-flex tw-items-center tw-rounded-full tw-font-heading tw-capitalize tw-font-bold tw-text-2xl dark:tw-text-background dark:tw-bg-primary tw-border-2 tw-border-transparent tw-transition-all tw-duration-300 tw-py-[26px] tw-px-[22px];
+}
+
+.hero-btn:hover {
+  @apply dark:hover:tw-text-primary dark:hover:tw-bg-transparent dark:hover:tw-border-primary;
+}
+
+.hero-btn:hover .icon {
+  @apply tw-w-5 tw-ml-4;
+}
+
+.icon {
+  @apply tw-w-0 tw-h-5 dark:tw-text-primary tw-transition-all tw-duration-500;
+}
+</style>

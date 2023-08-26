@@ -139,6 +139,9 @@ const articles = [
           <div class="img-border-1"></div>
           <div class="img-border-2"></div>
           <div class="img-border-3"></div>
+          <div class="img-border-4"></div>
+          <div class="img-border-5"></div>
+          <div class="img-border-6"></div>
           <img
             class="hero-img"
             src="https://cdn.discordapp.com/attachments/1063523239718035607/1144635166682251314/b89815bb-bf85-4b49-ad9d-c323e6e10033.jpg"
@@ -179,9 +182,6 @@ const articles = [
 </template>
 
 <style scoped>
-.hero-img {
-  @apply tw-w-[22rem] tw-h-[22rem] tw-object-cover tw-rounded-sm tw-z-20;
-}
 .hero-btn-secondary {
   @apply tw-w-fit tw-flex tw-items-center tw-rounded-lg tw-font-heading tw-capitalize tw-font-bold tw-text-2xl dark:tw-text-primary dark:tw-bg-transparent tw-border-2 tw-border-primary tw-transition-all tw-duration-300 tw-py-6 tw-px-5;
 }
@@ -207,11 +207,11 @@ const articles = [
 }
 
 .triangle-lg {
-  @apply tw-w-0 tw-h-0 tw-absolute -tw-top-20 -tw-left-24 tw-border-solid tw-rotate-[165deg] tw-border-t-[350px] tw-border-r-[350px] tw-border-l-[250px] tw-border-transparent dark:tw-border-t-accent-secondary/80 tw-z-10;
+  @apply tw-w-0 tw-h-0 tw-absolute -tw-top-14 -tw-left-20 tw-border-solid tw-rotate-[165deg] tw-border-t-[200px] tw-border-r-[320px] tw-border-l-[250px] tw-border-transparent dark:tw-border-t-accent-secondary/80 tw-z-10;
 }
 
 .triangle-sm {
-  @apply tw-w-0 tw-h-0 tw-absolute -tw-bottom-10 tw-right-8 tw-border-solid -tw-rotate-[10deg] tw-border-b-[110px] tw-border-l-[220px] tw-border-transparent dark:tw-border-b-primary/70 tw-z-10;
+  @apply tw-w-0 tw-h-0 tw-absolute -tw-bottom-8 tw-right-10 tw-border-solid -tw-rotate-[5deg] tw-border-b-[90px] tw-border-l-[190px] tw-border-transparent dark:tw-border-b-primary/70 tw-z-10;
 }
 
 .blur-shadow {
@@ -234,6 +234,28 @@ const articles = [
   @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid tw-border-primary/80 tw-z-20;
   transform-style: preserve-3d;
   transform: rotateY(15deg) rotateZ(-12deg);
+}
+
+.img-border-4 {
+  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid tw-border-primary/80 tw-z-20;
+  transform-style: preserve-3d;
+  transform: rotateY(15deg) rotateZ(-16deg);
+}
+
+.img-border-5 {
+  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid tw-border-primary/80 tw-z-20;
+  transform-style: preserve-3d;
+  transform: rotateY(15deg) rotateZ(-20deg);
+}
+
+.img-border-6 {
+  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid tw-border-primary/80 tw-z-20;
+  transform-style: preserve-3d;
+  transform: rotateY(15deg) rotateZ(-24deg);
+}
+
+.hero-img {
+  @apply tw-w-[22rem] tw-h-[22rem] tw-object-cover tw-rounded-sm tw-z-20;
 }
 
 .articles-container {
