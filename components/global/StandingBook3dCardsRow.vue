@@ -37,12 +37,12 @@ const fictions = [
 
 <template>
   <section
-    class="tw-max-w-screen-xl tw-flex tw-flex-col tw-self-center tw-gap-32"
+    class="tw-max-w-screen-2xl tw-flex tw-flex-col tw-self-center tw-gap-32"
   >
     <h2 class="tw-font-heading tw-font-semibold tw-text-3xl">
       Recent Fictions
     </h2>
-    <div class="tw-flex tw-flex-wrap -tw-space-x-10">
+    <div class="tw-w-max tw-flex tw-flex-wrap -tw-space-x-10">
       <standing-book-3d-card
         v-for="(fiction, idx) in fictions"
         :key="idx"

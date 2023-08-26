@@ -124,17 +124,17 @@ const prevNtBtnHandler = () => {
 </script>
 
 <template>
-  <section class="tw-max-w-screen-xl tw-flex tw-flex-col tw-space-y-32">
+  <section class="tw-max-w-screen-2xl tw-flex tw-flex-col tw-space-y-32">
     <h2 class="tw-font-heading tw-font-semibold tw-text-3xl">
       Trending Articles
     </h2>
-    <div class="tw-max-w-screen-xl tw-flex tw-gap-5 tw-font-body">
+    <div class="tw-max-w-screen-2xl tw-flex tw-gap-5 tw-font-body">
       <!-- Main card -->
       <trending-article-card :active="true" :item="items[0]" />
 
       <!-- Tiny cards carousel -->
       <section
-        class="tw-h-[24.5rem] tw-w-[58rem] tw-flex tw-flex-col tw-justify-between -tw-mt-12 tw-overflow-x-hidden"
+        class="tw-h-[24.5rem] tw-w-min tw-flex tw-flex-col tw-justify-between -tw-mt-12 tw-overflow-x-hidden"
         data-carousel
       >
         <div class="tw-flex tw-space-x-5 tw-mt-12" data-slides>

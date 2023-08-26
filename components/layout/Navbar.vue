@@ -1,6 +1,6 @@
 <template>
   <header
-    class="tw-max-w-screen-xl tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-py-5 tw-mx-auto"
+    class="tw-max-w-screen-2xl tw-flex tw-flex-wrap tw-items-center tw-justify-between tw-py-5 tw-mx-auto"
   >
     <nuxt-link
       href="/"

@@ -19,6 +19,11 @@ const authors = [
     followerCount: 13,
     name: 'Eyasu Alemayehu',
     bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima a eveniet dolorem. Minima a eveniet dolorem.'
+  },
+  {
+    followerCount: 31,
+    name: 'Daneil Wondimu',
+    bio: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima a eveniet dolorem. Minima a eveniet dolorem.'
   }
 ];
 
@@ -37,7 +42,7 @@ const handleMouseMove = (e): void => {
 
 <template>
   <section
-    class="tw-max-w-screen-xl tw-flex tw-flex-col tw-self-center tw-gap-32"
+    class="tw-max-w-screen-2xl tw-flex tw-flex-col tw-self-center tw-gap-32"
   >
     <h2 class="tw-font-heading tw-font-semibold tw-text-3xl">Top Authors</h2>
     <div class="author-cards" @mousemove="handleMouseMove">
@@ -78,7 +83,7 @@ const handleMouseMove = (e): void => {
 }
 
 .author-card {
-  @apply tw-relative tw-w-[300px] tw-rounded-[10px] tw-cursor-pointer;
+  @apply tw-relative tw-w-[280px] tw-rounded-[10px] tw-cursor-pointer tw-mb-12;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -111,7 +116,7 @@ const handleMouseMove = (e): void => {
 }
 
 .author-card > .author-card-content {
-  @apply tw-relative tw-h-[calc(100%-2px)] tw-w-[calc(100%-2px)] tw-flex tw-flex-col tw-justify-between tw-items-center tw-gap-9 tw-bg-background/80 tw-px-5 tw-pb-10 tw-m-[1px];
+  @apply tw-relative tw-h-[calc(100%-2px)] tw-w-[calc(100%-2px)] tw-flex tw-flex-col tw-items-center tw-gap-9 tw-bg-background/80 tw-px-5 tw-pb-10 tw-m-[1px];
   border-radius: inherit;
   z-index: 2;
 }

@@ -29,13 +29,13 @@ const { title, date, month, author, readTime, category } = props.item;
       class="card-img"
     />
     <div class="card-content tw-rounded-b-lg">
-      <div class="tw-flex tw-justify-between tw-items-center tw-p-5">
+      <div class="tw-flex tw-justify-between tw-items-center tw-py-3 tw-px-5">
         <h3
-          class="tw-basis-2/3 tw-font-body tw-font-medium dark:tw-text-text-color tw-text-xl"
+          class="tw-basis-[60%] tw-font-body tw-font-medium dark:tw-text-text-color tw-text-xl"
         >
           {{ title }}
         </h3>
-        <div class="tw-basis-1/4 tw-flex tw-flex-col">
+        <div class="tw-basis-[30%] tw-flex tw-flex-col">
           <span
             class="tw-font-body tw-font-bold tw-text-slate-400 tw-text-3xl tw-text-center"
           >
@@ -45,7 +45,7 @@ const { title, date, month, author, readTime, category } = props.item;
         </div>
       </div>
       <!-- <v-divider></v-divider> -->
-      <p class="tw-font-body tw-text-sm tw-text-gray-200 tw-p-5">
+      <p class="tw-font-body tw-text-sm tw-text-gray-200 tw-py-3 tw-px-5">
         {{ author }} . {{ readTime }} min read . {{ category }}
       </p>
       <!-- <font-awesome-icon
@@ -64,7 +64,7 @@ const { title, date, month, author, readTime, category } = props.item;
 
 <style scoped>
 .card-container {
-  @apply tw-relative tw-w-[23rem] tw-h-[23rem] tw-rounded-lg tw-border-2 tw-border-slate-600 tw-transition-all tw-duration-1000;
+  @apply tw-relative tw-w-[20rem] tw-h-[20rem] tw-rounded-lg tw-border-2 tw-border-slate-600 tw-transition-all tw-duration-1000;
 }
 
 .card-container:hover {
@@ -111,7 +111,7 @@ const { title, date, month, author, readTime, category } = props.item;
 }
 
 .card-content {
-  @apply tw-w-full tw-h-40 tw-absolute tw-bottom-0 tw-left-0 tw-flex tw-flex-col tw-justify-end  tw-bg-slate-900 tw-rounded-b-lg tw-transition-all tw-duration-1000;
+  @apply tw-w-full tw-h-32 tw-absolute tw-bottom-0 tw-left-0 tw-flex tw-flex-col tw-justify-end  tw-bg-slate-900 tw-rounded-b-lg tw-transition-all tw-duration-1000;
 }
 
 .card-fab {
