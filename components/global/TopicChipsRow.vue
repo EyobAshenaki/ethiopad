@@ -20,9 +20,9 @@ const topics = [
 </script>
 
 <template>
-  <section class="tw-flex tw-gap-3">
+  <div class="tw-flex tw-gap-3">
     <topic-chip v-for="topic in topics" :key="topic" :topic="topic" />
-  </section>
+  </div>
 </template>
 
 <style scoped></style>

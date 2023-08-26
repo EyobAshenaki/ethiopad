@@ -57,13 +57,13 @@ const toggleDark = useToggle(isDark);
 
         <articles-row />
 
-        <section-divider class="tw-w-full dark:tw-fill-background -tw-mt-40" />
+        <section-divider class="tw-w-full dark:tw-fill-background -tw-mt-60" />
       </div>
     </section>
 
     <!-- Fiction section -->
     <section
-      class="tw-flex tw-flex-col tw-items-center tw-gap-40 tw-bg-gradient-to-b tw-from-background tw-to-slate-800 tw-pb-40 tw-mt-10"
+      class="tw-flex tw-flex-col tw-items-center tw-gap-40 tw-bg-gradient-to-b tw-from-background tw-to-slate-800 tw-pb-60 tw-mt-10"
     >
       <laying-book-3d-cards-row />
 

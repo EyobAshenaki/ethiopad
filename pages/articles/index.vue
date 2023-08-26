@@ -123,14 +123,16 @@ const articles = [
     <section class="articles-container">
       <trending-articles-row />
 
+      <!-- Maybe add a recommended section based on the read's previous reads and interests -->
+
       <articles-row class="tw-pt-20" />
 
-      <!-- Todo -->
-      <!-- Add a articles cards divided into their catagories and topic names displayed on left side vertically with a short line to their left -->
-      <div class="tw-max-w-screen-2xl tw-flex tw-flex-col">
+      <section class="tw-max-w-screen-2xl tw-flex tw-flex-col">
         <topic-chips-row class="tw-max-w-screen-2xl tw-mb-8" />
+
         <h3 class="topic-sub-heading">Topic</h3>
         <h2 class="topic-heading">Sport</h2>
+
         <div class="tw-flex tw-flex-wrap tw-gap-12 tw-mb-10">
           <article-card
             v-for="(article, idx) in articles"
@@ -138,9 +140,11 @@ const articles = [
             :item="article"
           />
         </div>
+
         <load-more-btn />
-      </div>
-      <!-- Maybe add a recommended section based on the read's previous reads and interests -->
+      </section>
+
+      <author-cards-row />
     </section>
   </main>
 </template>
@@ -183,7 +187,7 @@ const articles = [
 }
 
 .articles-container {
-  @apply tw-flex tw-flex-col tw-items-center tw-gap-20 tw-bg-gradient-to-b dark:tw-from-background dark:tw-via-background dark:tw-to-slate-800 tw-pt-36 tw-pb-48;
+  @apply tw-flex tw-flex-col tw-items-center tw-gap-20 tw-bg-gradient-to-b dark:tw-from-background dark:tw-via-background dark:tw-to-slate-800 tw-pt-36 tw-pb-60;
 }
 
 .topic-sub-heading {

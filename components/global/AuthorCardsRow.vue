@@ -42,7 +42,7 @@ const handleMouseMove = (e): void => {
 
 <template>
   <section
-    class="tw-max-w-screen-2xl tw-flex tw-flex-col tw-self-center tw-gap-32"
+    class="tw-max-w-screen-2xl tw-flex tw-flex-col tw-self-center tw-gap-24"
   >
     <h2 class="tw-font-heading tw-font-semibold tw-text-3xl">Top Authors</h2>
     <div class="author-cards" @mousemove="handleMouseMove">
