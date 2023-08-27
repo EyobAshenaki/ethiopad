@@ -13,11 +13,11 @@
 }
 
 .load-more-btn:hover .load-more-icon {
-  @apply tw-text-accent-secondary tw-bg-text-color;
+  @apply dark:tw-text-accent-secondary dark:tw-bg-text-color;
 }
 
 .load-more-btn:hover span {
-  @apply tw-text-text-color tw-bg-transparent;
+  @apply tw-text-text-color dark:tw-bg-transparent;
 }
 
 .load-more-icon {

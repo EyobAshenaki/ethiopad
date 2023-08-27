@@ -183,7 +183,7 @@ const articles = [
 
 <style scoped>
 .hero-btn-secondary {
-  @apply tw-w-fit tw-flex tw-items-center tw-rounded-lg tw-font-heading tw-capitalize tw-font-bold tw-text-2xl dark:tw-text-primary dark:tw-bg-transparent tw-border-2 tw-border-primary tw-transition-all tw-duration-300 tw-py-6 tw-px-5;
+  @apply tw-w-fit tw-flex tw-items-center tw-rounded-lg tw-font-heading tw-capitalize tw-font-bold tw-text-2xl dark:tw-text-primary dark:tw-bg-transparent tw-border-2 dark:tw-border-primary tw-transition-all tw-duration-300 tw-py-6 tw-px-5;
 }
 
 .hero-btn-secondary:hover {
@@ -219,37 +219,37 @@ const articles = [
 }
 
 .img-border-1 {
-  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid tw-border-primary/80 tw-z-20;
+  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid dark:tw-border-primary/80 tw-z-20;
   transform-style: preserve-3d;
   transform: rotateY(15deg) rotateZ(-4deg);
 }
 
 .img-border-2 {
-  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid tw-border-primary/80 tw-z-20;
+  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid dark:tw-border-primary/80 tw-z-20;
   transform-style: preserve-3d;
   transform: rotateY(15deg) rotateZ(-8deg);
 }
 
 .img-border-3 {
-  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid tw-border-primary/80 tw-z-20;
+  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid dark:tw-border-primary/80 tw-z-20;
   transform-style: preserve-3d;
   transform: rotateY(15deg) rotateZ(-12deg);
 }
 
 .img-border-4 {
-  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid tw-border-primary/80 tw-z-20;
+  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid dark:tw-border-primary/80 tw-z-20;
   transform-style: preserve-3d;
   transform: rotateY(15deg) rotateZ(-16deg);
 }
 
 .img-border-5 {
-  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid tw-border-primary/80 tw-z-20;
+  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid dark:tw-border-primary/80 tw-z-20;
   transform-style: preserve-3d;
   transform: rotateY(15deg) rotateZ(-20deg);
 }
 
 .img-border-6 {
-  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid tw-border-primary/80 tw-z-20;
+  @apply tw-w-[24rem] tw-h-[24rem] tw-absolute tw-rounded-3xl tw-border-2 tw-border-solid dark:tw-border-primary/80 tw-z-20;
   transform-style: preserve-3d;
   transform: rotateY(15deg) rotateZ(-24deg);
 }
@@ -263,12 +263,12 @@ const articles = [
 }
 
 .topic-sub-heading {
-  @apply tw-font-heading tw-font-bold tw-capitalize tw-text-xl tw-text-slate-300 tw-mb-4;
+  @apply tw-font-heading tw-font-bold tw-capitalize tw-text-xl dark:tw-text-slate-300 tw-mb-4;
   letter-spacing: 2px;
 }
 
 .topic-heading {
-  @apply tw-font-heading tw-font-bold tw-capitalize tw-text-5xl tw-text-text-color tw-mb-12;
+  @apply tw-font-heading tw-font-bold tw-capitalize tw-text-5xl dark:tw-text-text-color tw-mb-12;
   letter-spacing: 2px;
 }
 </style>
