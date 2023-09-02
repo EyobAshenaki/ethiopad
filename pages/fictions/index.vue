@@ -296,7 +296,7 @@ onUpdated(() => {
 }
 
 .masonry {
-  @apply tw-aspect-[13/19] tw-object-cover dark:tw-bg-slate-400 tw-rounded-sm tw-opacity-75;
+  @apply tw-aspect-[13/18.57] tw-object-cover dark:tw-bg-slate-400 tw-rounded-sm tw-opacity-75;
 }
 
 .hero-btn-secondary {

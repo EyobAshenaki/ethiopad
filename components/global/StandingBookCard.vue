@@ -103,7 +103,7 @@ const titleStyle = computed(() => {
 }
 
 .book {
-  @apply tw-w-[13rem] tw-h-[19rem] tw-relative;
+  @apply tw-w-[13rem] tw-h-[18.57rem] tw-relative;
   transform-style: preserve-3d;
   transition: 0.8s ease-in-out;
 }
