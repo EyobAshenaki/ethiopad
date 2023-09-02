@@ -1,14 +1,7 @@
 <script setup lang="ts">
-import { useDark, useToggle } from '@vueuse/core';
 import TopicsCarouselRow from '/components/home/TopicsCarouselRow.client.vue';
 import HeroSectionDivider from '/components/layout/HeroSectionDivider.vue';
 import SectionDivider from '/components/layout/SectionDivider.vue';
-
-const isDark = useDark({
-  valueDark: 'tw-dark',
-  valueLight: 'tw-light'
-});
-const toggleDark = useToggle(isDark);
 </script>
 
 <template>
