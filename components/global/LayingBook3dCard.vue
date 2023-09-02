@@ -24,10 +24,7 @@ const props = withDefaults(defineProps<{ item: FictionProp; idx: number }>(), {
 <template>
   <div class="b-container">
     <div class="book">
-      <!-- :style="`background-image: url(\'/assets/images/book_cover_${props.idx}.jpg\');`" -->
-      <div
-        class="cover"
-      ></div>
+      <div class="cover"></div>
       <span class="page" style="--i: 0.25"></span>
       <span class="page" style="--i: 0.5"></span>
       <span class="page" style="--i: 0.75"></span>
@@ -54,48 +51,48 @@ const props = withDefaults(defineProps<{ item: FictionProp; idx: number }>(), {
 
 <style scoped>
 .b-container {
-  @apply tw-w-[13rem] tw-h-[19rem] tw-flex tw-justify-center tw-items-center tw-gap-16;
+  @apply tw-flex;
   transform-style: preserve-3d;
   perspective: 1000px;
 }
 
-.b-container .book {
-  @apply tw-w-full tw-h-full tw-relative;
+.book {
+  @apply tw-w-[13rem] tw-h-[19rem] tw-relative;
   transform-style: preserve-3d;
   transition: 0.8s ease-in-out;
   transform: rotateY(15deg) rotateX(60deg) rotateZ(-25deg);
 }
 
-.b-container .book:hover {
+.book:hover {
   transform: rotateY(45deg) rotateX(0deg) rotateZ(0deg);
 }
 
-.b-container .book:active {
+.book:active {
   transform: rotateY(145deg) rotateX(20deg) rotateZ(-14deg);
 }
 
-.b-container .book::before {
+.book::before {
   content: 'The Fate of Fausto';
   @apply tw-absolute tw-w-12 tw-h-full tw-flex tw-justify-start tw-items-center tw-font-mono tw-origin-left tw-bg-secondary tw-text-[20px] tw-leading-6 tw-p-4;
   writing-mode: tb-rl;
   transform: rotateY(90deg) rotateX(180deg) rotateZ(180deg);
 }
 
-.b-container .book::after {
+.book::after {
   content: '';
   @apply tw-w-full tw-h-full tw-absolute tw-origin-center tw-bg-secondary;
   transform: rotateY(180deg) translateZ(0rem);
 }
 
-.b-container .book .cover {
+.book .cover {
   @apply tw-w-full tw-h-full tw-absolute tw-origin-center dark:tw-bg-green-400;
   background-image: url('/assets/images/book_cover_1.jpg');
   background-size: cover;
   transform: translateZ(3rem);
 }
 
-.b-container .book .page {
-  @apply tw-w-[95%] tw-h-[95%] tw-absolute tw-top-0 tw-left-0 tw-origin-right dark:tw-bg-text-color tw-border tw-border-slate-800;
+.book .page {
+  @apply tw-w-[95%] tw-h-[95%] tw-absolute tw-top-1 tw-left-0 tw-origin-right dark:tw-bg-text-color tw-border tw-border-slate-800;
   transform: rotateZ(calc(0deg * var(--i)))
     translateZ(calc(-10px * var(--i) + 3rem)) translateY(calc(0.8px * var(--i)))
     translateX(calc(0px));

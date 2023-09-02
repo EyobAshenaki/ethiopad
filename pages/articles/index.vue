@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import TrendingArticlesRow from '/components/home/TrendingArticlesRow.vue';
-import officeHours from 'assets/images/office_hours.jpg';
-import moneyTalk from 'assets/images/money_talk.jpg';
-import management from 'assets/images/management.jpg';
+import ethioianArt from 'assets/images/ethiopian_art.jpg';
 import history from 'assets/images/history.jpg';
+import literature from 'assets/images/literature.jpg';
+import management from 'assets/images/management.jpg';
+import moneyTalk from 'assets/images/money_talk.jpg';
+import officeHours from 'assets/images/office_hours.jpg';
 import productivity from 'assets/images/productivity.jpg';
 import technology from 'assets/images/technology.jpg';
-import ethioianArt from 'assets/images/ethiopian_art.jpg';
-import literature from 'assets/images/literature.jpg';
 
 import { useImage } from '@vueuse/core';
 
@@ -95,6 +94,46 @@ const articles = [
     month: 'Feb 2023',
     image: ethioianArt,
     imgObj: useImage({ src: ethioianArt })
+  },
+  {
+    readTime: 5,
+    title: 'Rise of Ethiopian Music',
+    author: 'Fikirte Assefa',
+    category: 'Music',
+    date: '11',
+    month: 'Dec 2023',
+    image: productivity,
+    imgObj: useImage({ src: productivity })
+  },
+  {
+    readTime: 8,
+    title: 'Ethiopian Culture',
+    author: 'Abebech Alemu',
+    category: 'Culture',
+    date: '19',
+    month: 'Jan 2023',
+    image: technology,
+    imgObj: useImage({ src: technology })
+  },
+  {
+    readTime: 16,
+    title: 'Best Ethiopian Food',
+    author: 'Adem Mohammed',
+    category: 'Food',
+    date: '17',
+    month: 'May 2023',
+    image: management,
+    imgObj: useImage({ src: management })
+  },
+  {
+    readTime: 7,
+    title: 'The Ethiopian Renaissance Dam',
+    author: 'Eyob Aschenaki',
+    category: 'Facts',
+    date: '09',
+    month: 'Aug 2023',
+    image: officeHours,
+    imgObj: useImage({ src: officeHours })
   }
 ];
 </script>
@@ -175,8 +214,6 @@ const articles = [
 
         <load-more-btn class="tw-mt-5" />
       </section>
-
-      <author-cards-row />
     </section>
   </main>
 </template>

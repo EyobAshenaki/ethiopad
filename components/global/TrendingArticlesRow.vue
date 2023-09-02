@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import TrendingArticleCard from '@/components/home/TrendingArticleCard.vue';
-
 const items = [
   {
     rank: 1,
